@@ -22,18 +22,23 @@
         <Compile Include="$(RepoRoot)src\SmartComponents.Inference\SmartTextAreaConfig.cs" LinkBase="Infrastructure" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\" />
+    </ItemGroup>
+
     <!-- Causes JS files to be loaded automatically as initializers -->
+    <!--
     <Target Name="CopyStaticFilesFromWebUI" BeforeTargets="ResolveProjectStaticWebAssets">
         <PropertyGroup>
             <_LibModulePath>wwwroot\$(ProjectName).lib.module.js</_LibModulePath>
         </PropertyGroup>
         <Copy SourceFiles="..\SmartComponents.StaticAssets\dist\SmartComponents.StaticAssets.lib.module.js" DestinationFiles="$(_LibModulePath)" SkipUnchangedFiles="true" />
         <ItemGroup>
-            <!-- Ensure it's in <Content> exactly once -->
             <Content Remove="$(_LibModulePath)" />
             <Content Include="$(_LibModulePath)" />
         </ItemGroup>
     </Target>
+     -->
 
     <!-- Causes CSS files to be included in the bundle of scoped CSS, even though it's not scoped -->
     <Target Name="AttachCssAsScoped" BeforeTargets="ComputeCssScope">
