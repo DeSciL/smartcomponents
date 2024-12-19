@@ -59,9 +59,7 @@ public static class SmartComboBoxEndpointRouteBuilderExtensions
             return Results.Ok(suggestionsList);
         });
 
-#if NET8_0_OR_GREATER
         endpoint.DisableAntiforgery();
-#endif
 
         return builder;
     }

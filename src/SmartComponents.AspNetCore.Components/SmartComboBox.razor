@@ -47,10 +47,6 @@
 
     private string? GetNameAttributeValue()
     {
-#if NET8_0_OR_GREATER
         return NameAttributeValue;
-#else
-        return null;
-#endif
     }
 }
