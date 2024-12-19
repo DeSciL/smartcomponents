@@ -5,7 +5,7 @@
             Can't support netstandard2.0 because FastBertTokenizer currently requires net6.0 or newer.
             See https://github.com/georg-jung/FastBertTokenizer/issues/23
         -->
-        <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+        <TargetFrameworks>net8.0</TargetFrameworks>
         <LangVersion>latest</LangVersion>
         <IsPackable>true</IsPackable>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
