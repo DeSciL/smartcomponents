@@ -8,3 +8,5 @@ artifacts/
 *.lib.module.js
 .tailwind/
 BenchmarkDotNet.Artifacts/
+/samples/ExampleBlazorApp/appsettings.Development.json
+/samples/ExampleMvcRazorPagesApp/appsettings.Development.json
