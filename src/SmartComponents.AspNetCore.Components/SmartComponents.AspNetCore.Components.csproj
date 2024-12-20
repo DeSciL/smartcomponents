@@ -22,10 +22,6 @@
         <Compile Include="$(RepoRoot)src\SmartComponents.Inference\SmartTextAreaConfig.cs" LinkBase="Infrastructure" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="wwwroot\" />
-    </ItemGroup>
-
     <!-- Causes JS files to be loaded automatically as initializers -->
     <!--
     <Target Name="CopyStaticFilesFromWebUI" BeforeTargets="ResolveProjectStaticWebAssets">
